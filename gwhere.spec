@@ -1,3 +1,6 @@
+# TODO:
+# - is langs.patch still needed?
+# - check if dekstop file is correct
 Summary:	Removable media catalog managment
 Summary(de):	Katalog-Verwaltung für Wechselmedien
 Summary(es):	Administración de catálogos de medios removibles
@@ -5,13 +8,14 @@ Summary(fr):	Gestionnaire de catalogues de media amovibles
 Summary(pl):	Zarz±dzanie katalogiem mediów
 Summary(pt):	Gestor de catálogos de media removivel
 Name:		gwhere
-Version:	0.1.1
-Release:	1
+Version:	0.1.6
+Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.gwhere.org/download/source/%{name}-%{version}.tar.gz
-# Source0-md5:	4a7381cb8b91fc53f2b03a252cd8c557
+# Source0-md5:	9eda7a1294361f6c2c9b1bb1dc1d8240
 Patch0:		%{name}-langs.patch
+Patch1:		%{name}-am_fix.patch
 URL:		http://www.gwhere.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -21,7 +25,6 @@ BuildRequires:	libtool
 BuildRequires:	zlib-devel
 Obsoletes:	GWhere
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 GWhere allows to manage a database of yours CDs and others removable
@@ -63,7 +66,8 @@ pesquisas sem a necessidade de inserir cada um dos seus CDs na drive.
 
 %prep
 %setup -q
-%patch0 -p1
+#%patch0 -p1
+%patch1 -p1
 chmod +w * -R
 #mv po/ar.po po/es.po
 #mv po/ar.gmo po/es.gmo
@@ -82,7 +86,13 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_desktopdir}
+
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
+
+mv -f $RPM_BUILD_ROOT/usr/share/applnk/Applications/gwhere.desktop \
+      $RPM_BUILD_ROOT%{_desktopdir}
 
 %find_lang %{name}
 
@@ -97,4 +107,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/*
 %{_pixmapsdir}/*
 %{_datadir}/%{name}
-%{_applnkdir}/Applications/%{name}.desktop
+%{_desktopdir}/%{name}.desktop
