@@ -1,6 +1,5 @@
 # TODO:
 # - is langs.patch still needed?
-# - check if dekstop file is correct
 Summary:	Removable media catalog managment
 Summary(de):	Katalog-Verwaltung für Wechselmedien
 Summary(es):	Administración de catálogos de medios removibles
@@ -9,13 +8,14 @@ Summary(pl):	Zarz±dzanie katalogiem mediów
 Summary(pt):	Gestor de catálogos de media removivel
 Name:		gwhere
 Version:	0.1.6
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.gwhere.org/download/source/%{name}-%{version}.tar.gz
 # Source0-md5:	9eda7a1294361f6c2c9b1bb1dc1d8240
 Patch0:		%{name}-langs.patch
 Patch1:		%{name}-am_fix.patch
+Patch2:		%{name}-desktop.patch
 URL:		http://www.gwhere.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -68,6 +68,7 @@ pesquisas sem a necessidade de inserir cada um dos seus CDs na drive.
 %setup -q
 #%patch0 -p1
 %patch1 -p1
+%patch2 -p1
 chmod +w * -R
 #mv po/ar.po po/es.po
 #mv po/ar.gmo po/es.gmo
