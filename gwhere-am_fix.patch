@@ -1,0 +1,8 @@
+--- gwhere-0.1.6/src/Makefile.am~	2004-03-09 00:44:17.000000000 +0100
++++ gwhere-0.1.6/src/Makefile.am	2004-12-11 11:50:13.606250456 +0100
+@@ -33,4 +33,4 @@
+ 	@GTK_LIBS@ \
+ 	$(INTLLIBS)
+ 
+-gwhere_LDFLAGS = \
++gwhere_LDFLAGS = 
