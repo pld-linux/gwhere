@@ -1,0 +1,11 @@
+--- GWhere-0.0.26/configure.in~	Wed Nov 13 14:06:27 2002
++++ GWhere-0.0.26/configure.in	Wed Nov 13 14:06:27 2002
+@@ -85,7 +85,7 @@
+ 
+ dnl Add the languages which your application supports here
+ dnl ======================================================
+-ALL_LINGUAS="ar cs de fr el es hu pl pt"
++ALL_LINGUAS="ar cs de fr es hu pl"
+ AM_GNU_GETTEXT
+ 
+ 
