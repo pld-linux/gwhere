@@ -10,6 +10,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.gwhere.org/download/source/%{name}-%{version}.tar.gz
+# Source0-md5:	4a7381cb8b91fc53f2b03a252cd8c557
 Patch0:		%{name}-langs.patch
 URL:		http://www.gwhere.org/
 BuildRequires:	autoconf
