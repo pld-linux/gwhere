@@ -16,6 +16,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel
+BuildRequires:	libtool
 BuildRequires:	zlib-devel
 Obsoletes:	GWhere
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
