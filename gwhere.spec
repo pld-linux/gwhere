@@ -17,6 +17,7 @@ BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	zlib-devel
+Obsoletes:	GWhere
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
@@ -93,5 +94,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/gwhere
 %{_mandir}/man1/*
 %{_pixmapsdir}/*
-%{_datadir}/%{name}/*
+%{_datadir}/%{name}
 %{_applnkdir}/Applications/%{name}.desktop
