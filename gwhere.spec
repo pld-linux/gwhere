@@ -72,7 +72,7 @@ chmod +w * -R
 rm -f missing
 %{__libtoolize}
 %{__gettextize}
-%{__aclocal} 
+%{__aclocal}
 %{__autoheader}
 %{__autoconf}
 %{__automake}
