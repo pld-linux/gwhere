@@ -1,11 +1,11 @@
 # TODO:
 # - is langs.patch still needed?
 Summary:	Removable media catalog managment
-Summary(de):	Katalog-Verwaltung für Wechselmedien
-Summary(es):	Administración de catálogos de medios removibles
-Summary(fr):	Gestionnaire de catalogues de media amovibles
-Summary(pl):	Zarz±dzanie katalogiem mediów
-Summary(pt):	Gestor de catálogos de media removivel
+Summary(de.UTF-8):   Katalog-Verwaltung fÃ¼r Wechselmedien
+Summary(es.UTF-8):   AdministraciÃ³n de catÃ¡logos de medios removibles
+Summary(fr.UTF-8):   Gestionnaire de catalogues de media amovibles
+Summary(pl.UTF-8):   ZarzÄ…dzanie katalogiem mediÃ³w
+Summary(pt.UTF-8):   Gestor de catÃ¡logos de media removivel
 Name:		gwhere
 Version:	0.1.6
 Release:	0.2
@@ -32,36 +32,36 @@ media (hard disks, floppy drive, Zip drive, CD-ROM, etc...). With
 GWhere it's easy to browse yours CDs or to make quick search without
 need to insert yours CDs in the drive at each once.
 
-%description -l de
+%description -l de.UTF-8
 GWhere erlaubt die Verwaltung einer Datenbank Ihrer CDs und anderer
 Wechselmedien (Festplatten, Floppies, Zip-Disketten, CD-ROM usw. ...).
 Mit GWhere ist es sehr einfach, Ihre CDs zu durchsuchen oder eine
-Schnellsuche durchzuführen ohne jedesmal die CD ins Laufwerk zu
+Schnellsuche durchzufÃ¼hren ohne jedesmal die CD ins Laufwerk zu
 stecken.
 
-%description -l es
+%description -l es.UTF-8
 GWhere permite administrar una base de datos de tus CDs y otros medios
 removibles (disco duros, diskettes, discos Zip, CD-ROMs, etc...). Con
-GWhere es fácil navegar tus CDs o realizar búsquedas sin la necesidad
+GWhere es fÃ¡cil navegar tus CDs o realizar bÃºsquedas sin la necesidad
 de insertar los CDs en la lectora de a uno por vez.
 
-%description -l fr
-GWhere permet de gérer une base de données de vos CD et autres media
+%description -l fr.UTF-8
+GWhere permet de gÃ©rer une base de donnÃ©es de vos CD et autres media
 amovibles (disques durs, disquettes, disquettes Zip, CD-ROM, etc...).
 Avec GWhere il est facile de parcourir vos CDs ou de faire une
-recherche rapide sans avoir besoin d'insérer vos CDs dans le lecteur à
+recherche rapide sans avoir besoin d'insÃ©rer vos CDs dans le lecteur Ã 
 chaque fois.
 
-%description -l pl
-GWhere to program zarz±dzaj±cy baz± p³yt CD oraz innych mediów (takich
-jak twarde dyski, dyskietki, dyski Zip itp.). Dziêki GWhere w ³atwy
-sposób mo¿na przegl±daæ swoje p³yty CD i szybko znale¼æ potrzebny plik
-bez konieczno¶ci ci±g³ego wk³adania p³yt do napêdu.
+%description -l pl.UTF-8
+GWhere to program zarzÄ…dzajÄ…cy bazÄ… pÅ‚yt CD oraz innych mediÃ³w (takich
+jak twarde dyski, dyskietki, dyski Zip itp.). DziÄ™ki GWhere w Å‚atwy
+sposÃ³b moÅ¼na przeglÄ…daÄ‡ swoje pÅ‚yty CD i szybko znaleÅºÄ‡ potrzebny plik
+bez koniecznoÅ›ci ciÄ…gÅ‚ego wkÅ‚adania pÅ‚yt do napÄ™du.
 
-%description -l pt
+%description -l pt.UTF-8
 O GWhere permite gerir uma base de dados dos seus CDs ou outros tipos
-de media removível (discos rígidos, disquetes, drives ZIP, CD-ROM,
-etc...). Com o GWhere é fácil explorar os seus CDs ou fazer rápidas
+de media removÃ­vel (discos rÃ­gidos, disquetes, drives ZIP, CD-ROM,
+etc...). Com o GWhere Ã© fÃ¡cil explorar os seus CDs ou fazer rÃ¡pidas
 pesquisas sem a necessidade de inserir cada um dos seus CDs na drive.
 
 %prep
