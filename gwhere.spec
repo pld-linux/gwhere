@@ -1,11 +1,11 @@
 # TODO:
 # - is langs.patch still needed?
 Summary:	Removable media catalog managment
-Summary(de.UTF-8):   Katalog-Verwaltung für Wechselmedien
-Summary(es.UTF-8):   Administración de catálogos de medios removibles
-Summary(fr.UTF-8):   Gestionnaire de catalogues de media amovibles
-Summary(pl.UTF-8):   Zarządzanie katalogiem mediów
-Summary(pt.UTF-8):   Gestor de catálogos de media removivel
+Summary(de.UTF-8):	Katalog-Verwaltung für Wechselmedien
+Summary(es.UTF-8):	Administración de catálogos de medios removibles
+Summary(fr.UTF-8):	Gestionnaire de catalogues de media amovibles
+Summary(pl.UTF-8):	Zarządzanie katalogiem mediów
+Summary(pt.UTF-8):	Gestor de catálogos de media removivel
 Name:		gwhere
 Version:	0.1.6
 Release:	0.2
