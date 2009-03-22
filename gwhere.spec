@@ -7,12 +7,12 @@ Summary(fr.UTF-8):	Gestionnaire de catalogues de media amovibles
 Summary(pl.UTF-8):	Zarządzanie katalogiem mediów
 Summary(pt.UTF-8):	Gestor de catálogos de media removivel
 Name:		gwhere
-Version:	0.1.6
-Release:	0.2
+Version:	0.2.3
+Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.gwhere.org/download/source/%{name}-%{version}.tar.gz
-# Source0-md5:	9eda7a1294361f6c2c9b1bb1dc1d8240
+# Source0-md5:	73b4ca918a61460758951318acd5eda8
 Patch0:		%{name}-langs.patch
 Patch1:		%{name}-am_fix.patch
 Patch2:		%{name}-desktop.patch
@@ -67,11 +67,12 @@ pesquisas sem a necessidade de inserir cada um dos seus CDs na drive.
 %prep
 %setup -q
 #%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+#%patch1 -p1
+#%patch2 -p1
 chmod +w * -R
 #mv po/ar.po po/es.po
 #mv po/ar.gmo po/es.gmo
+%{__sed} -i "s@gwhere_LDFLAGS = .@gwhere_LDFLAGS =@" src/Makefile.am
 
 %build
 rm -f missing
@@ -80,8 +81,9 @@ rm -f missing
 %{__aclocal}
 %{__autoheader}
 %{__autoconf}
-%{__automake}
+%{__automake} 
 %configure
+%{__sed} -i "s@MSGMERGE_UPDATE =.*@MSGMERGE_UPDATE =echo @g" po/Makefile
 %{__make}
 
 %install
@@ -91,6 +93,7 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/cs-windows-1250
 
 mv -f $RPM_BUILD_ROOT/usr/share/applnk/Applications/gwhere.desktop \
       $RPM_BUILD_ROOT%{_desktopdir}
