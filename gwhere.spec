@@ -19,7 +19,7 @@ Patch2:		%{name}-desktop.patch
 URL:		http://www.gwhere.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+-devel
 BuildRequires:	libtool
 BuildRequires:	zlib-devel
